@@ -6,16 +6,16 @@ const CoD = () => {
             <h2>دسته بندی فانتزی ها</h2>
             <div className='CoD'>
                 <div className='CoDBoxImg'>
-                    <img src="../public/CoD/ag.webp" alt="" />
+                    <img src="/CoD/ag.webp" alt="" />
                 </div>
                 <div className='CoDBoxImg'>
-                    <img src="../public/CoD/geeg.webp" alt="" />
+                    <img src="/CoD/geeg.webp" alt="" />
                 </div>
                 <div className='CoDBoxImg'>
-                    <img src="../public/CoD/nore.webp" alt="" />
+                    <img src="/CoD/nore.webp" alt="" />
                 </div>
                 <div className='CoDBoxImg'>
-                    <img src="../public/CoD/tablo.webp" alt="" />
+                    <img src="/CoD/tablo.webp" alt="" />
                 </div>
             </div>
         </div>
