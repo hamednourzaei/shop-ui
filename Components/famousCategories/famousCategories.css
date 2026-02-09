@@ -1,49 +1,80 @@
 .FamousCategories {
-    width: 100%;
+    width: 90%;
+    margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 2rem;
-    gap: 2.5rem;
+    padding: 1rem;
+    gap: 3rem;
 }
 
 .FamousCategoriesItem {
     width: 100%;
     text-align: center;
-    color: #303030;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
 
+/* فریم دور تصویر برای ایجاد ظاهر مینیمال */
+.image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* مربع نگه داشتن فریم */
+    overflow: hidden;
+    border-radius: 10%; /* دایره‌ای کردن تصاویر برای حس مینیمال‌تر */
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #e7e5e4;
 }
 
 .FamousCategoriesItem img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
-    cursor: pointer;
-    border: 1px solid #5555;
+    transition: transform 0.6s ease;
 }
 
 .FamousCategoriesItem p {
-    font-size: 20px;
-    font-weight: bold;
-
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #57534e;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
 }
 
-.FamousCategoriesItem:hover {
-    color: #0a85d1;
+/* افکت‌های هوور حرفه‌ای */
+.FamousCategoriesItem:hover .image-wrapper {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(168, 162, 158, 0.2);
+    border-color: #d6d3d1;
 }
 
+.FamousCategoriesItem:hover img {
+    transform: scale(1.15); /* زوم ملایم تصویر داخل فریم */
+}
 
+.FamousCategoriesItem:hover p {
+    color: #1c1917;
+    font-weight: 500;
+}
 
+@media (max-width: 992px) {
+    .FamousCategories { gap: 1.5rem; width: 95%; }
+}
 
 @media (max-width: 768px) {
     .FamousCategories {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
+    .FamousCategoriesItem p { font-size: 0.9rem; }
 }
 
 @media (max-width: 480px) {
     .FamousCategories {
         gap: 1rem;
-        padding: 2rem;
+        padding: 0.5rem;
     }
 }

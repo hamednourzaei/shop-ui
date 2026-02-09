@@ -77,7 +77,7 @@ const Nav = () => {
                 </ul>
             </div>
             <div className='logoNav'>
-                <Link to="/"><img src="../public/logo/logo.png" alt="" /></Link>
+                <Link to="/"><img src="/logo/logo.png" alt="" /></Link>
             </div>
         </nav>
     );
