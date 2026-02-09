@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import "./SearchPage.css";
+import "./searchPage.css";
 import FilterListIcon from '@mui/icons-material/FilterList';
 import { TextField } from '@mui/material';
 import { useQuery } from '@tanstack/react-query';
