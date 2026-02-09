@@ -1,0 +1,60 @@
+.SpecialCollection {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.titleMten {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.SpecialCollection .mySwiper {
+    border-radius: 12px;
+}
+
+.SpecialCollection .mySwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EBEBEB;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.SpecialCollection .product-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .titleMten {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .SpecialCollection {
+        width: 95%;
+    }
+
+    .titleMten {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .titleMten {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .SpecialCollection .mySwiper {
+        border-radius: 8px;
+    }
+}

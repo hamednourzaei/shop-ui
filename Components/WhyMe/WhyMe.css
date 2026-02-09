@@ -1,0 +1,142 @@
+.WhyMe {
+    margin-top: 2rem;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.title-WhyMe {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.title-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #45485F;
+}
+
+.animated-text {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #45485F;
+    animation: rotateText 3s ease-in-out infinite;
+    width: 100%;
+}
+
+.mten-WhyMe {
+    margin-bottom: 20px;
+}
+
+.mtenTitle-WyhMe {
+    font-size: 22px;
+    font-weight: bold;
+    color: #444;
+}
+
+.Description-WhyMe {
+    font-size: 16px;
+    color: #666;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotateX(-90deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+}
+
+
+.WhyMe-rectangle {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 1000px;
+    height: 500px;
+    background: linear-gradient(138deg, #889aff, rgba(136, 154, 255, 0));
+    transform: rotate(138deg);
+    z-index: -1;
+}
+
+
+
+/* تغییرات برای تبلت */
+@media (max-width: 1024px) {
+    .WhyMe {
+        grid-template-columns: 1fr;
+        /* نمایش تک‌ستونه */
+        padding: 3rem;
+    }
+
+    .title-text,
+    .animated-text {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+/* تغییرات برای موبایل */
+@media (max-width: 768px) {
+    .WhyMe {
+        padding: 2rem;
+    }
+
+    .title-text,
+    .animated-text {
+        font-size: 2rem;
+        /* کاهش بیشتر سایز فونت */
+        text-align: center;
+    }
+
+    .mten-WhyMe {
+        text-align: center;
+    }
+
+    .WhyMe-rectangle {
+        width: 800px;
+        height: 400px;
+        left: 50%;
+        transform: translateX(-50%) rotate(138deg);
+        /* تغییر مکان پس‌زمینه */
+    }
+}
+
+/* تغییرات برای موبایل‌های کوچک */
+@media (max-width: 480px) {
+    .WhyMe {
+        padding: 1.5rem;
+    }
+
+    .title-text,
+    .animated-text {
+        font-size: 1.8rem;
+    }
+
+    .mtenTitle-WyhMe {
+        font-size: 18px;
+    }
+
+    .Description-WhyMe {
+        font-size: 14px;
+    }
+
+    .WhyMe-rectangle {
+        width: 600px;
+        height: 300px;
+    }
+}

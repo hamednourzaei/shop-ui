@@ -1,0 +1,49 @@
+.FamousCategories {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    gap: 2.5rem;
+}
+
+.FamousCategoriesItem {
+    width: 100%;
+    text-align: center;
+    color: #303030;
+
+}
+
+.FamousCategoriesItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid #5555;
+}
+
+.FamousCategoriesItem p {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.FamousCategoriesItem:hover {
+    color: #0a85d1;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .FamousCategories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .FamousCategories {
+        gap: 1rem;
+        padding: 2rem;
+    }
+}

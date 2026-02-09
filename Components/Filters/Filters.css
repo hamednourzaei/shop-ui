@@ -1,0 +1,62 @@
+.filters {
+    width: 20%;
+    border: 1px solid #5555;
+    border-radius: 10px;
+    padding: 10px;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+    background-color: white;
+    z-index: 999;
+    text-align: right;
+}
+
+.filtersTitle {
+    padding: 5px;
+}
+
+.filters span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.MuiFormControlLabel-root {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    border-bottom: 1px solid #5555;
+}
+
+.Accordion {
+    border-bottom: 1px solid #5555;
+    padding: 0;
+}
+
+.Accordion-title {
+    font-family: "VazirL" !important;
+    font-weight: 700 !important;
+}
+
+.InputFillterPrice {
+    position: relative;
+}
+
+.InputFillterPrice input::placeholder {
+    text-align: left;
+    font-family: "VazirL";
+    direction: ltr;
+}
+
+.InputFillterPrice input {
+    font-family: "VazirL";
+    text-align: right;
+    direction: rtl;
+}
+
+.InputFillterPrice::after {
+    content: "تومان";
+    position: absolute;
+    color: #555;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}

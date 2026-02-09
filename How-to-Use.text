@@ -1,0 +1,15 @@
+Project Setup Guide
+To set up and run the project, follow these steps in your terminal:
+
+1. Install Dependencies Add the node_modules folder to your project by running the following command:
+
+Bash
+npm install
+2. Start the Database To activate the database, use this command:
+
+Bash
+npm run server
+3. Run the Project After installation, use the following command to see the output:
+
+Bash
+npm run dev

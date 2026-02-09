@@ -1,0 +1,143 @@
+.SearchPage {
+    width: 100%;
+    display: flex;
+    padding: var(--padding);
+    gap: var(--gap);
+}
+
+.bestAndProducts {
+    width: 80%;
+}
+
+.BoxSearch {
+    width: 20%;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    text-align: right;
+    padding: var(--padding);
+}
+
+.serachAbest {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.best,
+.best ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: var(--font-size-small);
+}
+
+.best {
+    gap: 1rem;
+}
+
+.best span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+}
+
+.best ul {
+    gap: var(--gap);
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.best ul li {
+    cursor: pointer;
+}
+
+.active {
+    color: var(--active-color);
+}
+
+.Products {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.Products img {
+    width: 100%;
+    height: auto;
+}
+
+.Product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--secondary-color);
+    padding: var(--padding);
+    box-sizing: border-box;
+    text-align: right;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.Price {
+    text-align: left;
+}
+
+.Product:hover {
+    box-shadow: var(--hover-shadow);
+}
+
+
+/* //////////// */
+
+
+
+
+@media (max-width: 1200px) {
+    .Products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .Products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .serachAbest {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .best {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .BoxSearch {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .Products {
+        grid-template-columns: 1fr;
+    }
+
+    .best ul {
+        flex-wrap: wrap;
+    }
+
+    .best ul li {
+        flex: 1 1 50%;
+    }
+}

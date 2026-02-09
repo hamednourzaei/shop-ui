@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #81858b;
+    --secondary-color: #ccc;
+    --hover-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --active-color: red;
+    --font-size-small: 14px;
+    --font-weight-bold: bold;
+    --border-radius: 10px;
+    --padding: 1.5rem;
+    --gap: 1rem;
+}
+
+@font-face {
+    font-family: "VazirL";
+    src: url("../public/font/Vazir/Vazir-Light.woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "VazirL";
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.Loading {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
